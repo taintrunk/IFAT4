@@ -11,6 +11,5 @@ public class HerokkuTest extends BaseTest {
         browser.get("https://the-internet.herokuapp.com/key_presses?");
         browser.findElement(By.xpath("//input[@id='target']")).sendKeys(Keys.ESCAPE);
         assertEquals(browser.findElement(By.xpath("//p[@id='result']")).getText(), "You entered: ESCAPE", "Expected - You entered: ESCAPE");
-        //накосячил в гитхабе
     }
 }
